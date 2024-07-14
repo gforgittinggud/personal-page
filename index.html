@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gordon Portofilo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section
+      id="about"
+      style="
+        background-image: url(./assets/body-bg.jpg);
+        margin: 0;
+        height: 100vh;
+      "
+    >
+      <div style="margin: 15rem 10rem">
+        <div class="section__text">
+          <h1 class="section__test__main">Gordon Lim</h1>
+          <p class="section__text__p1">Software Developer</p>
+          <p class="section__text__p2">
+            I am a recent graduate who is excited about the possibilities that
+            technologies can bring about. I enjoy projects which pushes me to do
+            better compared to the past. With experience in Java and Spring Boot
+            framework, I'm currently looking out for opportunities in
+            development roles for backend applications. Do contact me via the
+            forms to discuss any potential opportunities!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <h1 style="text-align: left">
+        <u style="font-size: 1.5em; color: white">Skills and Experiences</u>
+      </h1>
+      <button id="buttonToggleList" onclick="toggleList()">List View</button>
+
+      <div>
+        <ul id="skills" style="z-index: 51">
+          <a class="menu-button icon-plus" href="#skill" title="Show navigation"
+            ><span class="fa" style="left: 39%; position: relative"
+              >&#xf406;</span
+            ></a
+          >
+          <a class="menu-button icon-minus" href="#0" title="Hide navigation"
+            ><span class="fa" style="left: 39%; position: relative"
+              >&#xf406;</span
+            ></a
+          >
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-sql"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-mysql"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-mssql"></span>
+            </a>
+          </li>
+
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-java"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-hibernate"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-jakarataee"></span>
+            </a>
+          </li>
+
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-spring-security"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-spring"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-spring-data"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-js"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-html"></span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-css"> </span>
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="#test">
+              <span class="icon-react"> </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="skills-list" class="hidden">
+        <ol
+          style="
+            padding: 1rem;
+            text-underline-offset: 7px;
+            color: rgb(247, 247, 247);
+          "
+        >
+          <li>
+            <u style="font-size: 1.5rem">Frontend</u>
+            <ul style="padding: 5px">
+              <li>
+                <p class="skill-list-tag">HTML</p>
+                <p class="skill-list-tag">CSS</p>
+                <p class="skill-list-tag">JavaScript</p>
+                <p class="skill-list-tag">React</p>
+              </li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <u style="font-size: 1.5rem"> Backend </u>
+            <ul style="padding: 5px">
+              <li>
+                <p class="skill-list-tag">Java</p>
+                <p class="skill-list-tag">Spring Boot</p>
+                <p class="skill-list-tag">Spring Data JPA</p>
+                <p class="skill-list-tag">Spring Security</p>
+                <p class="skill-list-tag">J2EE</p>
+                <p class="skill-list-tag">Hibernate</p>
+                <p class="skill-list-tag">C#</p>
+                <p class="skill-list-tag">.NET</p>
+                <p class="skill-list-tag">Python</p>
+              </li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <u style="font-size: 1.5rem"> Database </u>
+            <ul style="padding: 5px">
+              <li>
+                <p class="skill-list-tag">MySQL</p>
+                <p class="skill-list-tag">MSSQL</p>
+              </li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <u style="font-size: 1.5rem"> Communications </u>
+            <ul style="padding: 5px">
+              <li>
+                <p class="skill-list-tag">HTTP</p>
+              </li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <u style="font-size: 1.5rem"> API </u>
+            <ul style="padding: 5px">
+              <li>
+                <p class="skill-list-tag">RESTful</p>
+              </li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <u style="font-size: 1.5rem"> Additional Skills </u>
+            <ul style="padding: 5px">
+              <li>
+                <p class="skill-list-tag">Git</p>
+                <p class="skill-list-tag">Jira</p>
+                <p class="skill-list-tag">Agile</p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="project">
+      <h1><u style="font-size: 1.5em">Projects</u></h1>
+      <br /><br />
+      <div id="project__main">
+        <div class="flip-card-container">
+          <div style="margin-top: 10px">
+            <u style="font-size: 1rem; padding: 10px"> Java Application </u>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./assets/project-java.jpeg"
+                  alt="project1"
+                  class="image-container"
+                />
+              </div>
+              <div class="flip-card-back">
+                <p class="flip-card-back-text">
+                  Frontend : Reactjs, HTML, CSS
+                  <br />
+                  Backend: Java, Spring Boot
+                  <br />
+                  Database : MySQL
+                  <br />
+                  Communication : HTTP
+                  <br />
+                  API : RESTful
+                </p>
+                <a href="#project">Click here to find out more!</a>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 1rem; padding: 0 5px">
+            The project involved using Java Spring Boot to fulfil product
+            requirements involving the integration of RESTful API with
+            MySQL,allowing efficient data retrieval from the data source.
+          </p>
+        </div>
+        <div class="flip-card-container">
+          <div style="margin-top: 10px">
+            <u style="font-size: 1rem; padding: 10px"> C# Application </u>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./assets/project-csharp.png"
+                  alt="project1"
+                  class="image-container"
+                />
+              </div>
+              <div class="flip-card-back">
+                <p class="flip-card-back-text">
+                  Frontend : C#, .NET
+                  <br />
+                  Backend: C#, .NET
+                  <br />
+                  Database : -
+                  <br />
+                  Communication : Ethernet
+                  <br />
+                  API : -
+                </p>
+                <a href="#project">Click here to find out more!</a>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 1rem; padding: 0 5px">
+            The project involved integrating various devices onto a GUI,
+            handling any errors and notification. Being in a Multi-threaded
+            environment, the Task Asynchronus Pattern (TAP) as prescribed by
+            MSFT .NET was used to prevent long running threads and deadlocks.
+          </p>
+        </div>
+        <div class="flip-card-container">
+          <div style="margin-top: 10px">
+            <u style="font-size: 1rem; padding: 10px">
+              Datalogging Application (In collaboration with A* National
+              Metrology Centre)
+            </u>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./assets/project-nmc.jpg"
+                  alt="project1"
+                  class="image-container"
+                />
+              </div>
+              <div class="flip-card-back">
+                <p class="flip-card-back-text">
+                  Frontend : C#, .NET
+                  <br />
+                  Backend: C#, .NET
+                  <br />
+                  Database : -
+                  <br />
+                  Communication : RS485
+                  <br />
+                  API : -
+                </p>
+                <a href="#project">Click here to find out more!</a>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 1rem; padding: 0 5px">
+            The project involved integrating data from peripheral device
+            (Corolios Mass Flow Meter) into a GUI for viewing while performing
+            logging operations of data points.
+          </p>
+        </div>
+        <div class="flip-card-container">
+          <div style="margin-top: 10px">
+            <u style="font-size: 1rem; padding: 10px">
+              Robotic Assistive feeder (School Project)
+            </u>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./assets/project-niryo.jpeg"
+                  alt="project1"
+                  class="image-container"
+                />
+              </div>
+              <div class="flip-card-back">
+                <p class="flip-card-back-text">
+                  Frontend : -
+                  <br />
+                  Backend: Python, ROS, OpenCV
+                  <br />
+                  Database : -
+                  <br />
+                  Communication : SSH
+                  <br />
+                  API : -
+                </p>
+                <a href="#project">Click here to find out more!</a>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 1rem; padding: 0 5px">
+            The project involved integrating visual input (facial recognition)
+            using a 2D camera and approximating the position of the user's
+            mouth, simulating the hand motion of a person of the feeding
+            process.
+          </p>
+        </div>
+        <div class="flip-card-container">
+          <div style="margin-top: 10px">
+            <u style="font-size: 1rem; padding: 10px">
+              Question Web App (In the works!)
+            </u>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./assets/project-qapp.jpg"
+                  alt="project1"
+                  class="image-container"
+                />
+              </div>
+              <div class="flip-card-back">
+                <p class="flip-card-back-text">
+                  Frontend : Reactjs, HTML, CSS
+                  <br />
+                  Backend: Java, Spring Boot
+                  <br />
+                  Database : MySQL
+                  <br />
+                  Communication : HTTP
+                  <br />
+                  API : RESTful
+                </p>
+                <a href="#project">Click here to find out more!</a>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 1rem; padding: 0 5px">
+            An simple app which allows users to create questions and save them
+            together with friends!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <h1><u style="font-size: 1.5em"> Timeline </u></h1>
+
+      <ul class="timeline">
+        <!-- Item 1 -->
+        <li style="padding: 0 15rem; margin-bottom: 5rem; margin-top: 5em">
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">FDM Group</span>
+              <span class="time-wrapper"
+                ><span class="time">Nov 2023 - May 2024</span></span
+              >
+            </div>
+            <div class="desc">
+              <p>
+                As a Software Developer Consultant, I worked as part of a scrum
+                team using Java Spring Boot to fulfil product requirements
+                involving the integration of RESTful API with MySQL, allowing
+                efficient data retrieval from the data source. <br />
+                <br />
+                Implemented Unit Tests using Junit to verify integrity of
+                computed results involving high precision, ensuring the
+                reliability and consistency of data.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 2 -->
+        <li style="padding: 0 15rem; margin-bottom: 5rem">
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Singapore Institute of Technology</span>
+              <span class="time-wrapper"
+                ><span class="time">Sep 2020 - Sep 2023</span></span
+              >
+            </div>
+            <div class="desc">
+              As a Student pursuing a degree in Mechanical Engineering
+              (Mechatronics), I was exposed to programming through development
+              with Robotics and Internships. <br /><br />
+              For my Final Year Project, it was a Desktop Application
+              interfacing with peripheral devices in real-time for monitoring
+              and logging purposes. Upon completion, I received good feedback
+              from the project team on the application's functionality and
+              interface.
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li style="padding: 0 15rem; margin-bottom: 5rem">
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Ascendze</span>
+              <span class="time-wrapper"
+                ><span class="time">Sep 2022 - Apr 2023</span></span
+              >
+            </div>
+            <div class="desc">
+              As a Intern, I was mainly tasked with supporting projects and
+              in-house application development. <br /><br />
+              This required the use of C# and .NET in a Multi-threaded
+              environment to perform asynchronus operations, verifying the
+              integrity of devices prior to process execution.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h1><u style="font-size: 1.5em">Contact me</u></h1>
+      <br /><br />
+      <div id="contact-card" style="margin: 0 13rem">
+        <form id="contact-form" onsubmit="sendEmail()">
+          <p class="name">
+            <input
+              name="name"
+              type="text"
+              class="feedback-input"
+              id="name"
+              placeholder="Name"
+            />
+          </p>
+
+          <p class="email">
+            <input
+              name="email"
+              type="email"
+              class="feedback-input"
+              id="email"
+              placeholder="Email"
+            />
+          </p>
+
+          <p class="text">
+            <textarea
+              name="text"
+              class="feedback-input"
+              id="text"
+              placeholder="Enter your text here!"
+            ></textarea>
+          </p>
+
+          <div class="submit">
+            <input type="submit" id="button-blue" />
+          </div>
+          <br />
+          <p style="color: rgb(245, 245, 245)" id="error-message"></p>
+          <p style="display: none" id="submitted"></p>
+        </form>
+      </div>
+    </section>
+
+    <section style="margin: 0">
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="Linkedin profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/gordonlimsj/'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="GitHub profile"
+          class="icon"
+          onclick="location.href='https://github.com/gordon23456'"
+        />
+      </div>
+    </section>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
