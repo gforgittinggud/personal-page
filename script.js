@@ -44,7 +44,7 @@ function sendEmail() {
 
 
   axios
-    .post(`https://18.143.177.192/send-email`, {
+    .post(`https://13.212.218.26/send-email`, {
       name: name,
       email: email,
       text: text,
