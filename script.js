@@ -50,12 +50,10 @@ function sendEmail() {
       text: text,
     })
     .then((response) => {
-      console.log(response.data);
       alert("Form submitted successfully!");
       document.getElementById("submitted").textContent = "submitted";
     })
     .catch((error) => {
-      console.log(error);
       alert("An issue occured on the server, Please try again.");
     });
 }
