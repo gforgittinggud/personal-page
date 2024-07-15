@@ -44,7 +44,7 @@ function sendEmail() {
 
 
   axios
-    .post(`https://13.212.218.26/send-email`, {
+    .post(`https://servernode345345.site/send-email`, {
       name: name,
       email: email,
       text: text,
