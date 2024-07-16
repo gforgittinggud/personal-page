@@ -5,6 +5,7 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+
 function toggleList() {
   const elements = document.querySelectorAll("#skills, #skills-list");
 
@@ -23,6 +24,14 @@ function toggleList() {
 
 function sendEmail() {
   event.preventDefault();
+  
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6LeHIBEqAAAAACRKGBXNh53z1Mkj3FCaxvegskGx', {action: 'submit'}).then(function(token) {
+        // Add your logic to submit to your backend server here.
+        console.log(token);
+    });
+  });
+
   var submitted = document.getElementById("submitted");
   if (submitted.textContent == "submitted") {
     alert("You have already submitted the Form.");
