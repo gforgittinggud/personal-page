@@ -24,7 +24,7 @@ function toggleList() {
 
 function sendEmail() {
   event.preventDefault();
-  console.log(token);
+  // console.log(token);
 
   var submitted = document.getElementById("submitted");
   if (submitted.textContent == "submitted") {
