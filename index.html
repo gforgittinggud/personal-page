@@ -529,18 +529,19 @@
             ></textarea>
           </p>
           <br />
-          <!-- <button
-          id="button-blue"
+
+          <button
             class="g-recaptcha"
             data-sitekey="6LeHIBEqAAAAACRKGBXNh53z1Mkj3FCaxvegskGx"
             data-callback="onSubmit"
             data-action="submit"
+            id="button-blue"
           >
             Submit
-          </button> -->
-          <div class="submit">
+          </button>
+          <!-- <div class="submit">
             <input type="submit" id="button-blue" />
-          </div>
+          </div> -->
           <br />
           <p style="color: rgb(245, 245, 245)" id="error-message"></p>
           <p style="display: none" id="submitted"></p>
@@ -567,5 +568,10 @@
     <script src="./script.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("contact-form").submit();
+      }
+    </script>
   </body>
 </html>
