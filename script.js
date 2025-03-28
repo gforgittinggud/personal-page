@@ -48,9 +48,11 @@ function sendEmail() {
     .get(
       `https://email-fabffhdxdagndcgc.southeastasia-01.azurewebsites.net/api/email`,
       {
-        name: name,
-        email: email,
-        text: text,
+        params: {
+          name: name,
+          email: email,
+          text: text,
+        },
       }
     )
     .then((response) => {
