@@ -5,7 +5,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-
 function toggleList() {
   const elements = document.querySelectorAll("#skills, #skills-list");
 
@@ -45,13 +44,15 @@ function sendEmail() {
     return;
   }
 
-
   axios
-    .post(`https://servernode345345.site/send-email`, {
-      name: name,
-      email: email,
-      text: text,
-    })
+    .post(
+      `https://email-fabffhdxdagndcgc.southeastasia-01.azurewebsites.net/`,
+      {
+        name: name,
+        email: email,
+        text: text,
+      }
+    )
     .then((response) => {
       alert("Form submitted successfully!");
       document.getElementById("submitted").textContent = "submitted";
