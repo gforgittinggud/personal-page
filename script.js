@@ -59,6 +59,7 @@ function sendEmail() {
     })
     .catch((error) => {
       alert("An issue occured on the server, Please try again.");
+      console.log(error);
     });
 }
 
