@@ -45,7 +45,7 @@ function sendEmail() {
   }
 
   axios
-    .post(
+    .get(
       `https://email-fabffhdxdagndcgc.southeastasia-01.azurewebsites.net/api/email`,
       {
         name: name,
